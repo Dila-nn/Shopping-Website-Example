@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeni Koleksiyon</title>
+    <link rel="stylesheet" href="yenikoleksiyon.css" />
+  </head>
+  <body>
+    <header  >
+      <a href="index.html" class="logo"><img src="resimler/logom_transparent.png" alt=""></a>
+      <a href="#" class="menu " onClick="toggleMenu();" ><ion-icon name="grid"></ion-icon></a>
+      <ul class="nav">
+          <li><a href="kadin.html">KADIN</a>  </li>
+          <li><a href="erkek.html">Erkek</a></li>
+          <li><a href="yenikoleksiyon.html">YENİ KOLEKSİYON</a></li>
+          <li><a href="kayit.php">İLETİŞİM</a></li>
+          <li><a href="basvuru.php">MODAMLA</a></li>
+      </ul>
+      <ul class="nav-mobile ">
+          <li><a href="#">Kadın</a></li>
+          <li><a href="#">Erkek</a></li>
+          <li><a href="#">Yeni Koleksiyon</a></li>
+      </ul>
+  </header>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="resimler/yenikoleksiyon10.jpg" alt="1" />
+          <h1>Mike</h1>
+          <div class="details">
+            <h2>Mike</h2>
+            
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="resimler/yenikoleksiyon1.jpg" alt="2" />
+          <h1>samite</h1>
+          <div class="details">
+            <h2>samite</h2>
+           
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="resimler/yenikoleksiyon3.jpg" alt="3" />
+          <h1>hashi</h1>
+          <div class="details">
+            <h2>hashi</h2>
+           
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="resimler/yenikoleksiyon4.jpg" alt="4" />
+          <h1>kaity</h1>
+          <div class="details">
+            <h2>kaity</h2>
+            
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="resimler/yenikoleksiyon7.jpg" alt="5" />
+          <h1>lauren</h1>
+          <div class="details">
+            <h2>lauren</h2>
+           
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="resimler/yenikoleksiyon8.jpg" alt="6" />
+          <h1>ryan</h1>
+          <div class="details">
+            <h2>ryan</h2>
+           
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="resimler/yenikoleksiyon9.jpg" alt="7" />
+          <h1>dakes</h1>
+          <div class="details">
+            <h2>dakes</h2>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="yenikoleksiyon.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
